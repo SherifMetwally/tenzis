@@ -1,8 +1,10 @@
 export default function Die(props) {
-
-    return (
-        <div className="dice">
-            esssssssssssseee
+        const styles = {
+            backgroundColor:props.isHeld ? "#59E391" : "white"
+        }
+    return (    
+        <div className="dice" style={styles}>
+           {props.value}
         </div>
     )
 }
